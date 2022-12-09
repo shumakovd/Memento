@@ -8,14 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		848047E1294337530010C738 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848047E0294337530010C738 /* AppDelegate.swift */; };
-		848047E3294337530010C738 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848047E2294337530010C738 /* SceneDelegate.swift */; };
-		848047E5294337530010C738 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848047E4294337530010C738 /* ViewController.swift */; };
 		848047E8294337530010C738 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848047E6294337530010C738 /* Main.storyboard */; };
 		848047EA294337560010C738 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848047E9294337560010C738 /* Assets.xcassets */; };
 		848047ED294337560010C738 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848047EB294337560010C738 /* LaunchScreen.storyboard */; };
 		848047F8294337560010C738 /* MementoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848047F7294337560010C738 /* MementoTests.swift */; };
 		84804802294337560010C738 /* MementoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84804801294337560010C738 /* MementoUITests.swift */; };
 		84804804294337560010C738 /* MementoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84804803294337560010C738 /* MementoUITestsLaunchTests.swift */; };
+		84804817294338DC0010C738 /* MementoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84804816294338DC0010C738 /* MementoVC.swift */; };
+		8480481A294339B00010C738 /* Memento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84804819294339B00010C738 /* Memento.swift */; };
+		8480481C294339BE0010C738 /* ConcreteMemento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480481B294339BE0010C738 /* ConcreteMemento.swift */; };
+		8480481F294339DD0010C738 /* Originator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480481E294339DD0010C738 /* Originator.swift */; };
+		8480482329433A090010C738 /* Caretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480482229433A090010C738 /* Caretaker.swift */; };
+		8480482629433B0E0010C738 /* UITextViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480482529433B0E0010C738 /* UITextViewExt.swift */; };
+		8480482929433B460010C738 /* MementoInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480482829433B460010C738 /* MementoInterface.swift */; };
+		8480482C29433B750010C738 /* UndoStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480482B29433B750010C738 /* UndoStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +44,6 @@
 /* Begin PBXFileReference section */
 		848047DD294337530010C738 /* Memento.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memento.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		848047E0294337530010C738 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		848047E2294337530010C738 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		848047E4294337530010C738 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		848047E7294337530010C738 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		848047E9294337560010C738 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		848047EC294337560010C738 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,14 @@
 		848047FD294337560010C738 /* MementoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MementoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84804801294337560010C738 /* MementoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MementoUITests.swift; sourceTree = "<group>"; };
 		84804803294337560010C738 /* MementoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MementoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		84804816294338DC0010C738 /* MementoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MementoVC.swift; sourceTree = "<group>"; };
+		84804819294339B00010C738 /* Memento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memento.swift; sourceTree = "<group>"; };
+		8480481B294339BE0010C738 /* ConcreteMemento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteMemento.swift; sourceTree = "<group>"; };
+		8480481E294339DD0010C738 /* Originator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Originator.swift; sourceTree = "<group>"; };
+		8480482229433A090010C738 /* Caretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caretaker.swift; sourceTree = "<group>"; };
+		8480482529433B0E0010C738 /* UITextViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExt.swift; sourceTree = "<group>"; };
+		8480482829433B460010C738 /* MementoInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MementoInterface.swift; sourceTree = "<group>"; };
+		8480482B29433B750010C738 /* UndoStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +112,11 @@
 			isa = PBXGroup;
 			children = (
 				848047E0294337530010C738 /* AppDelegate.swift */,
-				848047E2294337530010C738 /* SceneDelegate.swift */,
-				848047E4294337530010C738 /* ViewController.swift */,
-				848047E6294337530010C738 /* Main.storyboard */,
+				84804813294338BF0010C738 /* Example */,
+				84804812294338B70010C738 /* Concept */,
+				84804811294338AF0010C738 /* ViewControllers */,
+				84804810294338A60010C738 /* Storyboards */,
 				848047E9294337560010C738 /* Assets.xcassets */,
-				848047EB294337560010C738 /* LaunchScreen.storyboard */,
 				848047EE294337560010C738 /* Info.plist */,
 			);
 			path = Memento;
@@ -125,6 +137,100 @@
 				84804803294337560010C738 /* MementoUITestsLaunchTests.swift */,
 			);
 			path = MementoUITests;
+			sourceTree = "<group>";
+		};
+		84804810294338A60010C738 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				848047E6294337530010C738 /* Main.storyboard */,
+				848047EB294337560010C738 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		84804811294338AF0010C738 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				84804814294338C40010C738 /* MementoVC */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		84804812294338B70010C738 /* Concept */ = {
+			isa = PBXGroup;
+			children = (
+				848048182943399C0010C738 /* Interface */,
+				8480481D294339D20010C738 /* Originator */,
+				84804821294339F70010C738 /* Caretaker */,
+			);
+			path = Concept;
+			sourceTree = "<group>";
+		};
+		84804813294338BF0010C738 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				8480482729433B300010C738 /* Interface */,
+				8480482A29433B6C0010C738 /* Stack */,
+				8480482429433AFF0010C738 /* Extensions */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		84804814294338C40010C738 /* MementoVC */ = {
+			isa = PBXGroup;
+			children = (
+				84804816294338DC0010C738 /* MementoVC.swift */,
+			);
+			path = MementoVC;
+			sourceTree = "<group>";
+		};
+		848048182943399C0010C738 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				84804819294339B00010C738 /* Memento.swift */,
+				8480481B294339BE0010C738 /* ConcreteMemento.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		8480481D294339D20010C738 /* Originator */ = {
+			isa = PBXGroup;
+			children = (
+				8480481E294339DD0010C738 /* Originator.swift */,
+			);
+			path = Originator;
+			sourceTree = "<group>";
+		};
+		84804821294339F70010C738 /* Caretaker */ = {
+			isa = PBXGroup;
+			children = (
+				8480482229433A090010C738 /* Caretaker.swift */,
+			);
+			path = Caretaker;
+			sourceTree = "<group>";
+		};
+		8480482429433AFF0010C738 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8480482529433B0E0010C738 /* UITextViewExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8480482729433B300010C738 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				8480482829433B460010C738 /* MementoInterface.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		8480482A29433B6C0010C738 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				8480482B29433B750010C738 /* UndoStack.swift */,
+			);
+			path = Stack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +364,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				848047E5294337530010C738 /* ViewController.swift in Sources */,
+				8480482329433A090010C738 /* Caretaker.swift in Sources */,
+				8480481C294339BE0010C738 /* ConcreteMemento.swift in Sources */,
+				8480481A294339B00010C738 /* Memento.swift in Sources */,
+				8480481F294339DD0010C738 /* Originator.swift in Sources */,
+				84804817294338DC0010C738 /* MementoVC.swift in Sources */,
+				8480482629433B0E0010C738 /* UITextViewExt.swift in Sources */,
+				8480482C29433B750010C738 /* UndoStack.swift in Sources */,
 				848047E1294337530010C738 /* AppDelegate.swift in Sources */,
-				848047E3294337530010C738 /* SceneDelegate.swift in Sources */,
+				8480482929433B460010C738 /* MementoInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,8 +555,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,9 +563,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Memento;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -471,8 +585,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,9 +593,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Memento;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
