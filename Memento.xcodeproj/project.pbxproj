@@ -22,6 +22,7 @@
 		8480482629433B0E0010C738 /* UITextViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480482529433B0E0010C738 /* UITextViewExt.swift */; };
 		8480482929433B460010C738 /* MementoInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480482829433B460010C738 /* MementoInterface.swift */; };
 		8480482C29433B750010C738 /* UndoStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480482B29433B750010C738 /* UndoStack.swift */; };
+		8480482F29433C6B0010C738 /* info.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = 8480482E29433C6B0010C738 /* info.rtfd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		8480482529433B0E0010C738 /* UITextViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExt.swift; sourceTree = "<group>"; };
 		8480482829433B460010C738 /* MementoInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MementoInterface.swift; sourceTree = "<group>"; };
 		8480482B29433B750010C738 /* UndoStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoStack.swift; sourceTree = "<group>"; };
+		8480482E29433C6B0010C738 /* info.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; path = info.rtfd; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				84804811294338AF0010C738 /* ViewControllers */,
 				84804810294338A60010C738 /* Storyboards */,
 				848047E9294337560010C738 /* Assets.xcassets */,
+				8480482D29433C5C0010C738 /* info */,
 				848047EE294337560010C738 /* Info.plist */,
 			);
 			path = Memento;
@@ -233,6 +236,14 @@
 			path = Stack;
 			sourceTree = "<group>";
 		};
+		8480482D29433C5C0010C738 /* info */ = {
+			isa = PBXGroup;
+			children = (
+				8480482E29433C6B0010C738 /* info.rtfd */,
+			);
+			path = info;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -339,6 +350,7 @@
 			files = (
 				848047ED294337560010C738 /* LaunchScreen.storyboard in Resources */,
 				848047EA294337560010C738 /* Assets.xcassets in Resources */,
+				8480482F29433C6B0010C738 /* info.rtfd in Resources */,
 				848047E8294337530010C738 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
